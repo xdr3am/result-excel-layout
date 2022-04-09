@@ -1,0 +1,71 @@
+.section {
+  @apply relative max-w-[1860px] rounded-2xl mx-auto bg-primary1 my-[60px];
+}
+
+.wrapper {
+  @apply container flex flex-col items-center py-[60px];
+}
+
+.title {
+  @apply mb-14 sm:mb-20 text-4xl sm:text-[54px] leading-[1.3] text-center font-bold text-white;
+}
+
+.list {
+  @apply flex flex-col w-full max-w-[1230px];
+}
+
+.item {
+  @apply flex flex-col lg:flex-row rounded-xl bg-[#428587] py-10 px-5 sm:px-12 mb-[10px] font-['Montserrat'] text-white;
+
+  &:last-of-type {
+    @apply mb-0;
+  }
+}
+
+.itemCol {
+  @apply relative w-full lg:w-[42%] px-0 lg:px-[3%] py-5 lg:py-0;
+
+  &::before {
+    @apply content-[''] absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 bottom-0 lg:bottom-1/2 translate-y-0 lg:translate-y-1/2 h-px lg:h-[70%] w-full lg:w-px bg-[#5DA2A4];
+  }
+
+  &:first-of-type {
+    @apply w-full lg:w-[23%] pl-0 pt-0;
+  }
+
+  &:last-of-type {
+    @apply w-full lg:w-[35%] pr-0 pb-0;
+
+    &::before {
+      @apply hidden;
+    }
+  }
+}
+
+.itemColTitle {
+  @apply mb-5 text-sm font-semibold uppercase;
+}
+
+.itemTitle {
+  @apply text-[22px] font-semibold;
+}
+
+.itemList {
+  @apply text-sm font-medium;
+
+  li {
+    @apply mb-0.5;
+  }
+}
+
+.itemText {
+  @apply text-sm;
+
+  p {
+    @apply mb-6;
+
+    &:last-of-type {
+      @apply mb-0
+    }
+  }
+}

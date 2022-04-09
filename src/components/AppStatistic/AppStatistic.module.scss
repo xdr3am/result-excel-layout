@@ -1,0 +1,23 @@
+.section {
+  @apply relative container py-[20px]
+}
+
+.list {
+  @apply flex items-center justify-evenly flex-wrap;
+}
+
+.item {
+  @apply relative flex-shrink-0 flex items-center justify-center pl-[30px] m-[20px];
+
+  &::before {
+    @apply content-[''] absolute top-[50%] left-0 translate-y-[-50%] w-[10px] h-[10px] rounded-full bg-[#E0E6E9];
+  }
+}
+
+.number {
+  @apply mr-[20px] font-semibold text-7xl text-primary2;
+}
+
+.text {
+  @apply w-full max-w-[142px] font-normal text-base;
+}

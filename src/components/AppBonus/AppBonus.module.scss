@@ -1,0 +1,35 @@
+.section {
+  @apply container relative py-[60px];
+}
+
+.wrapper {
+  @apply flex flex-col items-center w-full mx-auto rounded-2xl py-[50px] px-5 xl:px-[120px] bg-[#f5f5f4];
+}
+
+.title {
+  @apply text-xl sm:text-2xl font-semibold text-primary1 uppercase mb-5;
+}
+
+.subtitle {
+  @apply text-xl sm:text-3xl text-center max-w-[750px] mb-10;
+}
+
+.list {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-[10px];
+}
+
+.item {
+  @apply flex flex-col py-[30px] px-6 rounded-xl bg-white;
+}
+
+.itemTitle {
+  @apply text-xl font-semibold mb-[14px]
+}
+
+.itemContent {
+  @apply text-base;
+}
+
+.fontMedium {
+  @apply font-medium;
+}

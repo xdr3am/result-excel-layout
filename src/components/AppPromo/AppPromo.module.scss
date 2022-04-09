@@ -1,0 +1,103 @@
+.section {
+  @apply pb-[130px] sm:py-[50px];
+}
+
+.top {
+  @apply relative overflow-hidden;
+}
+
+.wrapper {
+  @apply relative flex flex-col xl:flex-row container;
+
+  &::after {
+    @apply content-[''] absolute -z-[2] top-0 -left-16 w-[120vw] h-full rounded-l-[36px] bg-primary1;
+  }
+}
+
+.video {
+  @apply relative flex-shrink-0 flex items-center justify-center self-end ml-auto w-[110%] sm:w-[800px] mt-0 lg:-mt-16 xl:mt-0 -mb-[30px] -mr-[9.5%] lg:-mr-[19%];
+
+  video {
+    @apply rounded-3xl;
+  }
+  &::before {
+    @apply content-[''] absolute -z-[1] -top-[45px] -left-[40px] w-[132px] h-[132px] opacity-30 bg-[url('../../assets/images/icons/bg-dots.svg')] bg-no-repeat bg-cover;
+  }
+}
+
+.circles {
+  @apply absolute -z-[1] left-64 lg:left-10 bottom-[40%] lg:-bottom-10 flex items-center;
+}
+
+.circle {
+  @apply w-[340px] h-[340px] rounded-full bg-[#357577] mr-2;
+}
+
+.promo {
+  @apply md:max-w-2xl pt-10 lg:pt-24 pb-14 lg:pb-0 xl:py-24;
+}
+
+.title {
+  @apply text-4xl md:text-7xl font-semibold text-white mb-10;
+}
+
+.subtitle {
+  @apply text-2xl md:text-3xl font-semibold text-white mb-6 sm:mr-0 md:mr-32;
+}
+
+.text {
+  @apply text-lg text-white text-white mb-14 mr-0 sm:mr-32;
+}
+
+.link {
+  @apply relative z-10 cursor-pointer transition duration-300 ease-in-out;
+
+  &::before {
+    @apply content-[''] -z-10 absolute right-0 bottom-[-2px] w-full h-px bg-white transition-all duration-300 ease-in-out;
+  }
+
+
+  &:hover,
+  &:focus {
+    &::before {
+      @apply h-[110%] bg-primary2;
+    }
+  }
+}
+
+.btnPrimary {
+  @apply flex items-center justify-center px-10 py-6 text-white bg-primary2 rounded-full transition duration-300 ease-in-out;
+
+  &:hover,
+  &:focus {
+    @apply text-black bg-white;
+  }
+}
+
+.bottom {
+  @apply relative container h-[40px];
+
+  &::before {
+    @apply content-[''] absolute -z-10 -bottom-[5px] -left-[110px] w-[132px] h-[132px] bg-[url('../../assets/images/icons/bg-dots.svg')] bg-no-repeat bg-cover;
+  }
+}
+
+.cloud {
+  @apply absolute -bottom-24 sm:bottom-0 left-0 sm:left-auto sm:right-[260px] max-w-[400px] pt-[40px] pb-[30px] px-[20px] shadow-lg bg-white rounded-[24px];
+}
+
+.cloudIcon {
+  @apply absolute top-[-49px] left-[62px] p-[18px] rounded-3xl bg-primary1;
+}
+
+.cloudText {
+  @apply text-gray;
+}
+
+.blackText {
+  @apply text-black;
+}
+
+.primaryText {
+  @apply text-primary2;
+}
