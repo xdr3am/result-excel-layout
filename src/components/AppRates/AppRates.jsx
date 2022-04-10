@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppRates.module.scss'
+import classes from './AppRates.module.scss';
 
 const AppRates = () => {
   const [rates] = useState([

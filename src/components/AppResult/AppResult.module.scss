@@ -18,7 +18,7 @@
   @apply p-[18px] mx-[5px] rounded-lg bg-[#2b3438] text-[34px] leading-[1.3] text-white;
 
   &:first-of-type {
-    @apply bg-[#3E494F]
+    @apply bg-[#3E494F];
   }
 }
 
@@ -31,7 +31,7 @@
 }
 
 .text {
-  @apply text-lg
+  @apply text-lg;
 }
 
 .arrow {
