@@ -43,7 +43,7 @@ const AppFaq = () => {
                 type="button"
                 data-bs-toggle="collapse"
                 data-bs-target={`#collapse${item.id}`}
-                aria-expanded="true"
+                aria-expanded="false"
                 aria-controls={`collapse${item.id}`}
               >
                 {item.title}
