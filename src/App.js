@@ -11,6 +11,7 @@ import AppProgram from './components/AppProgram/AppProgram';
 import AppBonus from './components/AppBonus/AppBonus';
 import AppRates from './components/AppRates/AppRates';
 import AppAuthors from './components/AppAuthors/AppAuthors';
+import AppFaq from './components/AppFaq/AppFaq';
 
 function App() {
   return (
@@ -20,14 +21,15 @@ function App() {
       <AppStatistic/>
       <AppPlan/>
       <AppResult/>
-      <AppFuture/>
-      <AppVacancies/>
+      {/*<AppFuture/>*/}
+      {/*<AppVacancies/>*/}
       <AppLearn/>
       <AppIncludes/>
       <AppProgram/>
       <AppBonus/>
       <AppRates/>
-      <AppAuthors/>
+      {/*<AppAuthors/>*/}
+      <AppFaq/>
       <AppPromo/>
     </div>
   );

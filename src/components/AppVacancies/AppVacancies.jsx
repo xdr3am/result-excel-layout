@@ -49,9 +49,9 @@ const AppVacancies = () => {
       >
         {vacancies.map(vacancy =>
           <SwiperSlide className={classes.slide} key={vacancy}>
-            <a className={classes.widget} href="#">
+            <div className={classes.widget}>
               <img src={VacancyWidget} alt="vacancy"/>
-            </a>
+            </div>
           </SwiperSlide>
         )}
       </Swiper>
