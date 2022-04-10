@@ -95,3 +95,10 @@ body {
 .swiper-wrapper {
   transition-timing-function: linear !important;
 }
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}

@@ -48,7 +48,7 @@ const AppIncludes = () => {
   ])
 
   return (
-    <div className={classes.section}>
+    <section className={classes.section}>
       <h2 className={classes.title}>Что включено в курс Vue.js</h2>
       <ul className={classes.list}>
         {list.map(item =>
@@ -61,7 +61,7 @@ const AppIncludes = () => {
           </li>
         )}
       </ul>
-    </div>
+    </section>
   );
 };
 

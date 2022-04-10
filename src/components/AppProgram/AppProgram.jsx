@@ -78,7 +78,7 @@ const AppProgram = () => {
   ])
 
   return (
-    <div className={classes.section}>
+    <section className={classes.section}>
       <div className={classes.wrapper}>
         <h2 className={classes.title}>Программа обучения</h2>
         <ul className={classes.list}>
@@ -108,7 +108,7 @@ const AppProgram = () => {
           )}
         </ul>
       </div>
-    </div>
+    </section>
   );
 };
 

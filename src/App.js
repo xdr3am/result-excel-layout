@@ -21,7 +21,7 @@ function App() {
       <AppPlan/>
       <AppResult/>
       <AppFuture/>
-      {/*<AppVacancies/>*/}
+      <AppVacancies/>
       <AppLearn/>
       <AppIncludes/>
       <AppProgram/>

@@ -84,7 +84,7 @@ const AppLearn = () => {
   ])
 
   return (
-    <div className={classes.section}>
+    <section className={classes.section}>
       <h2 className={classes.title}>Чему именно ты научишься на курсе Excel</h2>
       <div className={classes.layout}>
         {data.map(col =>
@@ -105,7 +105,7 @@ const AppLearn = () => {
           </div>
         )}
       </div>
-    </div>
+    </section>
   );
 };
 

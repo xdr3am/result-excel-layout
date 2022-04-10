@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
@@ -7,7 +7,7 @@ import AvatarAuthor from '../../assets/images/content/author.png';
 import IconPrev from '../../assets/images/icons/icon-prev.svg';
 import IconNext from '../../assets/images/icons/icon-next.svg';
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Pagination]);
 
 const AppAuthors = () => {
   const [authors] = useState([
@@ -88,15 +88,19 @@ const AppAuthors = () => {
   const swiperRef = React.useRef(null);
 
   return (
-    <div className={classes.section}>
+    <section className={classes.section}>
       <h2 className={classes.title}>Авторы обучения</h2>
       <Swiper
         modules={[Navigation, Pagination]}
         className={classes.slider}
+        pagination={{
+          type: "fraction",
+        }}
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
         ref={swiperRef}
+        navigation={true}
         breakpoints={{
           320: {
             slidesPerView: 1,
@@ -145,7 +149,7 @@ const AppAuthors = () => {
           <img src={IconNext} alt="Вперед"/>
         </button>
       </div>
-    </div>
+    </section>
   );
 };
 

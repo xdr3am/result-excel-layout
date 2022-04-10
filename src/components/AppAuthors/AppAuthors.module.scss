@@ -7,7 +7,7 @@
 }
 
 .slider {
-  @apply container pb-10;
+  @apply container pb-20;
 }
 
 .slide {
@@ -89,11 +89,11 @@
 }
 
 .sliderButtons {
-  @apply flex items-center;
+  @apply absolute z-[1] bottom-[58px] left-1/2 -translate-x-1/2 flex items-center;
 }
 
 .sliderButton {
-  @apply flex items-center justify-center mx-5;
+  @apply flex items-center justify-center mx-8;
 
   &:disabled {
     @apply cursor-no-drop opacity-50;

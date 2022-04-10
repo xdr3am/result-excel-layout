@@ -11,7 +11,7 @@ const AppVacancies = () => {
   const [vacancies] = useState([1, 2, 3, 4, 5, 6]);
 
   return (
-    <div className={classes.section}>
+    <section className={classes.section}>
       <div className={classes.titleContainer}>
         <h2 className={classes.title}>Больше умеешь, лучше работаешь</h2>
         <div className={classes.arrow}>
@@ -56,7 +56,7 @@ const AppVacancies = () => {
         )}
       </Swiper>
       <p className={classes.text}>Список вакансий, на которые ты сможешь пройти, если выполнишь все задания и усвоишь курс Excel </p>
-    </div>
+    </section>
   );
 };
 

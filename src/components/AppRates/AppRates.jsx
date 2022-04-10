@@ -40,7 +40,7 @@ const AppRates = () => {
   }
 
   return (
-    <div className={classes.section}>
+    <section className={classes.section}>
       <h2 className={classes.title}>Выбирай свой стек для обучения</h2>
       <ul className={classes.list}>
         {rates.map((rate, idx) =>
@@ -74,7 +74,7 @@ const AppRates = () => {
           </li>
         )}
       </ul>
-    </div>
+    </section>
   );
 };
 
