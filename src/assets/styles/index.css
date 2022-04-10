@@ -72,6 +72,16 @@
       url("../fonts/Montserrat-SemiBold.woff") format("woff");
 }
 
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "DroidSans";
+  font-display: swap;
+  src:
+      url("../fonts/DroidSansMono.woff2") format("woff2"),
+      url("../fonts/DroidSansMono.woff") format("woff");
+}
+
 body {
   font-family: 'Golos', sans-serif;
   @apply text-black bg-[#fafafa];

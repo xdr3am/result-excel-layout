@@ -6,6 +6,7 @@ import AppResult from './components/AppResult/AppResult';
 import AppFuture from './components/AppFuture/AppFuture';
 import AppVacancies from './components/AppVacancies/AppVacancies';
 import AppLearn from './components/AppLearn/AppLearn';
+import AppCodeExample from './components/AppCodeExample/AppCodeExample';
 import AppIncludes from './components/AppIncludes/AppIncludes';
 import AppProgram from './components/AppProgram/AppProgram';
 import AppBonus from './components/AppBonus/AppBonus';
@@ -24,6 +25,7 @@ function App() {
       {/*<AppFuture/>*/}
       {/*<AppVacancies/>*/}
       <AppLearn/>
+      <AppCodeExample/>
       <AppIncludes/>
       <AppProgram/>
       <AppBonus/>
