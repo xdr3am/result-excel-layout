@@ -116,3 +116,20 @@ body {
 #reviewsSlider .swiper-pagination {
   color: #ffffff !important;
 }
+
+#reviewsSlider .swiper-slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+#reviewsSlider .swiper-slide-active::before,
+#reviewsSlider .swiper-slide-active + .swiper-slide::before,
+#reviewsSlider .swiper-slide-active + .swiper-slide + .swiper-slide::before,
+#reviewsSlider .swiper-slide-active + .swiper-slide + .swiper-slide + .swiper-slide::before {
+  display: none;
+}
