@@ -85,7 +85,7 @@ const AppAuthors = () => {
     }
   ])
 
-  const swiperRef = React.useRef(null);
+  const swiperAuthorsRef = React.useRef(null);
 
   return (
     <section className={classes.section}>
@@ -99,7 +99,7 @@ const AppAuthors = () => {
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
-        ref={swiperRef}
+        ref={swiperAuthorsRef}
         navigation={true}
         breakpoints={{
           320: {
@@ -142,10 +142,10 @@ const AppAuthors = () => {
         )}
       </Swiper>
       <div className={classes.sliderButtons}>
-        <button className={classes.sliderButton} onClick={() => swiperRef.current.swiper.slidePrev()}>
+        <button className={classes.sliderButton} onClick={() => swiperAuthorsRef.current.swiper.slidePrev()}>
           <img src={IconPrev} alt="Назад"/>
         </button>
-        <button className={classes.sliderButton} onClick={() => swiperRef.current.swiper.slideNext()}>
+        <button className={classes.sliderButton} onClick={() => swiperAuthorsRef.current.swiper.slideNext()}>
           <img src={IconNext} alt="Вперед"/>
         </button>
       </div>

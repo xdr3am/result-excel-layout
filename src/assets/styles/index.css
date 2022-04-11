@@ -102,7 +102,7 @@ body {
   clip: rect(0 0 0 0);
 }
 
-.swiper-wrapper {
+#sliderVacancies .swiper-wrapper {
   transition-timing-function: linear !important;
 }
 
@@ -111,4 +111,8 @@ body {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#reviewsSlider .swiper-pagination {
+  color: #ffffff !important;
 }

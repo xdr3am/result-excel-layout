@@ -20,6 +20,7 @@ const AppVacancies = () => {
         <h2 className={classes.title}>Сложнее проекты, больше заработок</h2>
       </div>
       <Swiper
+        id="sliderVacancies"
         className={classes.slider}
         spaceBetween={20}
         slidesPerView={'auto'}
