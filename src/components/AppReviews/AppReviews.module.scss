@@ -19,11 +19,11 @@
 }
 
 .video {
-  @apply flex-shrink-0 flex items-center justify-center w-full h-[440px] mb-4 rounded-[20px] overflow-hidden cursor-pointer;
+  @apply flex-shrink-0 flex items-center w-auto h-[440px] mb-4 rounded-[20px] overflow-hidden cursor-pointer;
 
   video,
   img {
-    @apply w-full h-auto object-cover align-middle;
+    @apply w-auto h-full object-contain rounded-[20px];
   }
 }
 

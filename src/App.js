@@ -19,22 +19,22 @@ function App() {
   return (
     <div className="wrapper">
       <h1 className="visually-hidden">Курс Excel</h1>
-      <AppPromo/>
-      <AppStatistic/>
-      <AppPlan/>
-      <AppResult/>
-      <AppFuture/>
-      <AppVacancies/>
-      <AppLearn/>
-      <AppCodeExample/>
-      <AppIncludes/>
-      <AppProgram/>
-      <AppBonus/>
-      <AppRates/>
+      {/*<AppPromo/>*/}
+      {/*<AppStatistic/>*/}
+      {/*<AppPlan/>*/}
+      {/*<AppResult/>*/}
+      {/*<AppFuture/>*/}
+      {/*<AppVacancies/>*/}
+      {/*<AppLearn/>*/}
+      {/*<AppCodeExample/>*/}
+      {/*<AppIncludes/>*/}
+      {/*<AppProgram/>*/}
+      {/*<AppBonus/>*/}
+      {/*<AppRates/>*/}
       <AppReviews />
-      <AppAuthors/>
-      <AppFaq/>
-      <AppPromo/>
+      {/*<AppAuthors/>*/}
+      {/*<AppFaq/>*/}
+      {/*<AppPromo/>*/}
     </div>
   );
 }

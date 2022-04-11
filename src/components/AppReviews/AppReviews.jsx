@@ -3,10 +3,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import classes from './AppReviews.module.scss';
-import ReviewVideo from '../../assets/images/content/review.png';
-import ReviewVideo2 from '../../assets/images/content/review2.png';
-import ReviewVideo3 from '../../assets/images/content/review3.png';
-import ReviewVideo4 from '../../assets/images/content/review4.png';
+import ReviewVideo from '../../assets/images/content/review.mp4';
+import AppVideo from "./AppVideo";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -20,19 +18,19 @@ const AppReviews = () => {
     },
     {
       id: 2,
-      video: ReviewVideo2,
+      video: ReviewVideo,
       name: 'Виктория Шамурина',
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
     {
       id: 3,
-      video: ReviewVideo3,
+      video: ReviewVideo,
       name: 'Виктория Шамурина',
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
     {
       id: 4,
-      video: ReviewVideo4,
+      video: ReviewVideo,
       name: 'Виктория Шамурина',
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
@@ -44,19 +42,19 @@ const AppReviews = () => {
     },
     {
       id: 6,
-      video: ReviewVideo2,
+      video: ReviewVideo,
       name: 'Виктория Шамурина',
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
     {
       id: 7,
-      video: ReviewVideo3,
+      video: ReviewVideo,
       name: 'Виктория Шамурина',
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
     {
       id: 8,
-      video: ReviewVideo4,
+      video: ReviewVideo,
       name: 'Виктория Шамурина',
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
@@ -67,6 +65,7 @@ const AppReviews = () => {
       status: 'копирайтер, UX-дизайнер, 24 года',
     },
   ])
+
 
   const sliderReviewsRef = React.useRef(null);
 
@@ -88,22 +87,13 @@ const AppReviews = () => {
           pagination={{
             type: "fraction",
           }}
-          // breakpoints={{
-          //   320: {
-          //     slidesPerView: 1,
-          //   },
-          //   950: {
-          //     slidesPerView: 2,
-          //   },
-          //   1300: {
-          //     slidesPerView: 4
-          //   }
-          // }}
         >
           {reviews.map(review =>
             <SwiperSlide className={classes.slide} key={review.id}>
               <div className={classes.video}>
-                <img src={review.video} alt="avatar"/>
+                <AppVideo
+                  video={review.video}
+                />
               </div>
               <h3 className={classes.name}>{review.name}</h3>
               <p className={classes.status}>{review.status}</p>
