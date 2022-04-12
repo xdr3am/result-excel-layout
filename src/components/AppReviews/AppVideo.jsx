@@ -8,7 +8,7 @@ const AppVideo = ({video}) => {
       ref={videoRef}
       onMouseOver={() => videoRef.current.play()}
       onMouseLeave={() => videoRef.current.pause()}
-      onClick={() => videoRef.current.requestFullscreen()}
+      onClick={() => videoRef.current.muted = !videoRef.current.muted}
       muted
       loop
     >
