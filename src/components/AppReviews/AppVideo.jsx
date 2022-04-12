@@ -1,8 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
 const AppVideo = ({video}) => {
-  const [play, setPlay] = useState(false)
-
   const videoRef = React.useRef(null)
 
   return (
