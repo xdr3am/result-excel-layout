@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppLearn.module.scss';
+import classes from './AppLearn.module.css';
 
 const AppLearn = () => {
   const [data] = useState([

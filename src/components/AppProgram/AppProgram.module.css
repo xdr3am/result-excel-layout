@@ -16,30 +16,30 @@
 
 .item {
   @apply flex flex-col lg:flex-row rounded-xl bg-[#428587] py-10 px-5 sm:px-12 mb-[10px] font-['Montserrat'] text-white;
+}
 
-  &:last-of-type {
-    @apply mb-0;
-  }
+.item:last-of-type {
+  @apply mb-0;
 }
 
 .itemCol {
   @apply relative w-full lg:w-[42%] px-0 lg:px-[3%] py-5 lg:py-0;
+}
 
-  &::before {
-    @apply content-[''] absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 bottom-0 lg:bottom-1/2 translate-y-0 lg:translate-y-1/2 h-px lg:h-[70%] w-full lg:w-px bg-[#5DA2A4];
-  }
+.itemCol::before {
+  @apply content-[''] absolute right-1/2 lg:right-0 translate-x-1/2 lg:translate-x-0 bottom-0 lg:bottom-1/2 translate-y-0 lg:translate-y-1/2 h-px lg:h-[70%] w-full lg:w-px bg-[#5DA2A4];
+}
 
-  &:first-of-type {
-    @apply w-full lg:w-[23%] pl-0 pt-0;
-  }
+.itemCol:first-of-type {
+  @apply w-full lg:w-[23%] pl-0 pt-0;
+}
 
-  &:last-of-type {
-    @apply w-full lg:w-[35%] pr-0 pb-0;
+.itemCol:last-of-type {
+  @apply w-full lg:w-[35%] pr-0 pb-0;
+}
 
-    &::before {
-      @apply hidden;
-    }
-  }
+.itemCol:last-of-type::before {
+  @apply hidden;
 }
 
 .itemColTitle {
@@ -52,20 +52,20 @@
 
 .itemList {
   @apply text-sm font-medium;
+}
 
-  li {
-    @apply mb-0.5;
-  }
+.itemList li {
+  @apply mb-0.5;
 }
 
 .itemText {
   @apply text-sm;
+}
 
-  p {
-    @apply mb-6;
+.itemText p {
+  @apply mb-6;
+}
 
-    &:last-of-type {
-      @apply mb-0;
-    }
-  }
+.itemText p:last-of-type {
+  @apply mb-0;
 }

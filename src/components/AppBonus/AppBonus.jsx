@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppBonus.module.scss';
+import classes from './AppBonus.module.css';
 
 const AppBonus = () => {
   const [bonuses] = useState([

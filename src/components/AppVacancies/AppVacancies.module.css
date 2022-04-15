@@ -12,10 +12,10 @@
 
 .arrow {
   @apply flex flex-shrink-0 items-center justify-center mx-10 my-5;
+}
 
-  img {
-    @apply rotate-90 md:rotate-0;
-  }
+.arrow img {
+  @apply rotate-90 md:rotate-0;
 }
 
 .slider {
@@ -28,10 +28,10 @@
 
 .widget {
   @apply flex items-center justify-center w-full;
+}
 
-  img {
-    @apply w-full h-auto;
-  }
+.widget img {
+  @apply w-full h-auto;
 }
 
 .text {

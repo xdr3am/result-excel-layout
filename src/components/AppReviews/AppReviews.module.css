@@ -20,11 +20,11 @@
 
 .video {
   @apply flex-shrink-0 flex items-center w-auto h-[440px] mb-4 rounded-[20px] overflow-hidden cursor-pointer;
+}
 
-  video,
-  img {
-    @apply w-auto h-full object-contain rounded-[20px];
-  }
+.video video,
+.video img {
+  @apply w-auto h-full object-contain rounded-[20px];
 }
 
 .name {
@@ -41,8 +41,8 @@
 
 .sliderButton {
   @apply flex items-center justify-center mx-8;
+}
 
-  &:disabled {
-    @apply cursor-no-drop opacity-50;
-  }
+.sliderButton:disabled {
+  @apply cursor-no-drop opacity-50;
 }

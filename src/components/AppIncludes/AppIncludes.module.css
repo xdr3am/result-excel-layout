@@ -16,10 +16,10 @@
 
 .itemTitle {
   @apply flex items-center text-2xl font-semibold mb-3;
+}
 
-  img {
-    @apply mr-3;
-  }
+.itemTitle img {
+  @apply mr-3;
 }
 
 .itemContent {

@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
-import classes from './AppReviews.module.scss';
+import classes from './AppReviews.module.css';
 import ReviewVideo from '../../assets/images/content/review.mp4';
 import AppVideo from "./AppVideo";
 

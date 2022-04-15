@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AppPromo.module.scss';
+import classes from './AppPromo.module.css';
 import IconExcel from '../../assets/images/icons/icon-excel.svg';
 import ExcelAnim from '../../assets/images/content/excel-anim.mov';
 

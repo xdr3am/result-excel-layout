@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AppPlan.module.scss';
+import classes from './AppPlan.module.css';
 import ExcelMask from '../../assets/images/content/excel-mask.svg';
 import ExcelContent from '../../assets/images/content/excel-content-anim.gif';
 

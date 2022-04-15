@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/autoplay';
-import classes from './AppVacancies.module.scss';
+import classes from './AppVacancies.module.css';
 import IconArrow from '../../assets/images/icons/icon-arrow-right.svg';
 import VacancyWidget from '../../assets/images/content/vacancy-widget.png';
 

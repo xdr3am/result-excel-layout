@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppFaq.module.scss';
+import classes from './AppFaq.module.css';
 import 'tw-elements';
 
 const AppFaq = () => {

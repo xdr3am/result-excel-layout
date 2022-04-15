@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppStatistic.module.scss';
+import classes from './AppStatistic.module.css';
 
 const AppStatistic = () => {
   const [statistic] = useState([

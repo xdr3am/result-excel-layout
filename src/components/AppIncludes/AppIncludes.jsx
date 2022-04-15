@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppIncludes.module.scss';
+import classes from './AppIncludes.module.css';
 import IconHD from '../../assets/images/icons/icon-hd.svg';
 import IconTime from '../../assets/images/icons/icon-time.svg';
 import IconCode from '../../assets/images/icons/icon-code.svg';

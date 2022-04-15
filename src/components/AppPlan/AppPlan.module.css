@@ -12,10 +12,10 @@
 
 .title {
   @apply flex flex-col items-center mb-[52px] text-[20px] sm:text-[28px] leading-[1.4] text-center;
+}
 
-  span {
-    @apply font-semibold;
-  }
+.title span {
+  @apply font-semibold;
 }
 
 .picture {
@@ -36,8 +36,8 @@
 
 .textPrimary {
   @apply relative pl-9 text-primary2 text-lg sm:text-2xl;
+}
 
-  &::before {
-    @apply content-[''] absolute top-[6px] left-0 w-5 h-5 bg-[url('../../assets/images/icons/icon-arrow.svg')] bg-no-repeat bg-cover;
-  }
+.textPrimary::before {
+  @apply content-[''] absolute top-[6px] left-0 w-5 h-5 bg-[url('../../assets/images/icons/icon-arrow.svg')] bg-no-repeat bg-cover;
 }

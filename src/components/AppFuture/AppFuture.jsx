@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './AppFuture.module.scss';
+import classes from './AppFuture.module.css';
 import ImageLowSkills from '../../assets/images/content/low-skills.jpg';
 import ImageHighSkills from '../../assets/images/content/high-skills.gif';
 

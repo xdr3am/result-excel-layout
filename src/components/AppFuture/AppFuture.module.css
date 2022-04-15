@@ -4,14 +4,14 @@
 
 .content {
   @apply flex flex-col lg:flex-row items-center mb-[40px] lg:mb-[80px];
+}
 
-  &:nth-of-type(2n) {
-    @apply flex-col lg:flex-row-reverse;
-  }
+.content:nth-of-type(2n) {
+  @apply flex-col lg:flex-row-reverse;
+}
 
-  &:last-of-type {
-    @apply mb-0;
-  }
+.content:last-of-type {
+  @apply mb-0;
 }
 
 .blockBefore {
@@ -24,10 +24,10 @@
 
 .pictureBefore {
   @apply flex items-center justify-center w-full rounded-l overflow-hidden;
+}
 
-  img {
-    @apply align-middle w-full h-auto object-cover;
-  }
+.pictureBefore img {
+  @apply align-middle w-full h-auto object-cover;
 }
 
 .signature {
@@ -56,10 +56,10 @@
 
 .pictureAfter {
   @apply flex items-center justify-center rounded-2xl overflow-hidden;
+}
 
-  img {
-    @apply align-middle w-full h-auto object-cover;
-  }
+.pictureAfter img {
+  @apply align-middle w-full h-auto object-cover;
 }
 
 .descriptionAfter {
@@ -72,10 +72,10 @@
 
 .text {
   @apply mb-8 text-lg;
+}
 
-  p {
-    @apply mb-2;
-  }
+.text p {
+  @apply mb-2;
 }
 
 .textDecoration {

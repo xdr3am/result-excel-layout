@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import classes from './AppProgram.module.scss';
+import classes from './AppProgram.module.css';
 
 const AppProgram = () => {
   const [program] = useState([

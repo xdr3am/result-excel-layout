@@ -8,10 +8,10 @@
 
 .item {
   @apply relative flex-shrink-0 flex items-center justify-center pl-[30px] m-[20px];
+}
 
-  &::before {
-    @apply content-[''] absolute top-[50%] left-0 translate-y-[-50%] w-[10px] h-[10px] rounded-full bg-[#E0E6E9];
-  }
+.item::before {
+  @apply content-[''] absolute top-[50%] left-0 translate-y-[-50%] w-[10px] h-[10px] rounded-full bg-[#E0E6E9];
 }
 
 .number {

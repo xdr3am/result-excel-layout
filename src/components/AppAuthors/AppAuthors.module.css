@@ -20,10 +20,10 @@
 
 .avatar {
   @apply flex-shrink-0 flex items-center justify-center w-[76px] h-[76px] mr-5 p-0.5 rounded-full border-2 border-primary2;
+}
 
-  img {
-    @apply w-full h-auto align-middle;
-  }
+.avatar img {
+  @apply w-full h-auto align-middle;
 }
 
 .nameContainer {
@@ -32,10 +32,10 @@
 
 .name {
   @apply relative text-lg sm:text-[22px] leading-[1.5] font-semibold pr-7 mb-1.5;
+}
 
-  &::before {
-    @apply content-[''] absolute top-1.5 sm:top-[11px] right-0 w-5 h-3 bg-[url('../../assets/images/icons/icon-check-primary.svg')] bg-no-repeat bg-contain;
-  }
+.name::before {
+  @apply content-[''] absolute top-1.5 sm:top-[11px] right-0 w-5 h-3 bg-[url('../../assets/images/icons/icon-check-primary.svg')] bg-no-repeat bg-contain;
 }
 
 .level {
@@ -44,48 +44,42 @@
 
 .slideList {
   @apply list-disc pl-4 mb-8 sm:mb-12 text-sm;
+}
 
-  li {
-    @apply mb-2.5;
+.slideList li {
+  @apply mb-2.5;
+}
 
-    &:last-of-type {
-      @apply mb-0;
-    }
-  }
+.slideList li:last-of-type {
+  @apply mb-0;
 }
 
 .slideSocials {
   @apply flex flex-wrap items-center;
+}
 
-  a {
-    @apply flex items-center justify-center py-3 px-5 mr-1.5 mb-2 rounded-full bg-[#F0F2F5] text-[14px] leading-[1] text-[#838c98];
+.slideSocials a {
+  @apply flex items-center justify-center py-3 px-5 mr-1.5 mb-2 rounded-full bg-[#F0F2F5] text-[14px] leading-[1] text-[#838c98];
+}
 
-    &:hover,
-    &:focus {
-      @apply text-white bg-primary2;
-    }
-  }
+.slideSocials a:hover,
+.slideSocials a:focus {
+  @apply text-white bg-primary2;
+}
 
-  .vk {
-    &:hover,
-    &:focus {
-      @apply bg-[#3877F6];
-    }
-  }
+.slideSocials .vk:hover,
+.slideSocials .vk:focus {
+  @apply bg-[#3877F6];
+}
 
-  .instagram {
-    &:hover,
-    &:focus {
-      @apply bg-gradient-to-l from-[#AC319C] via-[#E55C7B] to-[#F8D577];
-    }
-  }
+.slideSocials .instagram:hover,
+.slideSocials .instagram:focus {
+  @apply bg-gradient-to-l from-[#AC319C] via-[#E55C7B] to-[#F8D577];
+}
 
-  .telegram {
-    &:hover,
-    &:focus {
-      @apply bg-[#5DABE5];
-    }
-  }
+.slideSocials .telegram:hover,
+.slideSocials .telegram:focus {
+  @apply bg-[#5DABE5];
 }
 
 .sliderButtons {
@@ -94,8 +88,8 @@
 
 .sliderButton {
   @apply flex items-center justify-center mx-8;
+}
 
-  &:disabled {
-    @apply cursor-no-drop opacity-50;
-  }
+.sliderButton:disabled {
+  @apply cursor-no-drop opacity-50;
 }

@@ -12,10 +12,10 @@
 
 .tags {
   @apply mb-5;
+}
 
-  span {
-    @apply mr-2 text-sm text-gray;
-  }
+.tags span {
+  @apply mr-2 text-sm text-gray;
 }
 
 .list {
@@ -24,10 +24,10 @@
 
 .item {
   @apply flex flex-col rounded-xl bg-white px-6 py-[30px] mb-2.5 shadow-lg;
+}
 
-  &:last-of-type {
-    @apply mb-0;
-  }
+.item:last-of-type {
+  @apply mb-0;
 }
 
 .itemTitle {

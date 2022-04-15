@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
-import classes from './AppAuthors.module.scss';
+import classes from './AppAuthors.module.css';
 import AvatarAuthor from '../../assets/images/content/author.png';
 import IconPrev from '../../assets/images/icons/icon-prev.svg';
 import IconNext from '../../assets/images/icons/icon-next.svg';
