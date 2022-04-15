@@ -19,6 +19,7 @@ const AppResult = () => {
           pin: true,
           scrub: true,
           toggleActions: "play complete reverse reverse",
+          invalidateOnRefresh: true
         }
       })
 
@@ -50,6 +51,7 @@ const AppResult = () => {
           pin: true,
           scrub: true,
           toggleActions: "play complete reverse reverse",
+          invalidateOnRefresh: true
         }
       })
 
