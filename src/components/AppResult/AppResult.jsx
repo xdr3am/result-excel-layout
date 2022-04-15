@@ -15,7 +15,7 @@ const AppResult = () => {
         scrollTrigger: {
           trigger: section.current,
           start: "top top",
-          end: () => `+=${section.current.offsetWidth * 1.5}`,
+          end: () => `+=${section.current.offsetWidth}`,
           pin: true,
           scrub: true,
           toggleActions: "play complete reverse reverse",
@@ -55,12 +55,12 @@ const AppResult = () => {
 
       tl.fromTo('._anim-block-start', {opacity: 0}, {opacity: 1})
       tl.fromTo('._anim-block-start', {y: 100}, {y: 0})
-      tl.fromTo('._anim-step-1', {x: -100, opacity: 0}, {x: 0, opacity: 1})
+      tl.fromTo('._anim-step-1', {x: 100, opacity: 0}, {x: 0, opacity: 1})
       tl.fromTo('._anim-description-1', {y: 10, opacity: 0}, {y: 0, opacity: 1})
       tl.fromTo('._anim-description-1', {y: 0, opacity: 1}, {y: 10, opacity: 0, delay: 1})
-      tl.fromTo('._anim-step-1', {x: 0, opacity: 1}, {x: 100, opacity: 0})
+      tl.fromTo('._anim-step-1', {x: 0, opacity: 1}, {x: -100, opacity: 0})
       tl.fromTo('._anim-container-2', {x: 0}, {x: "-100%", duration: 0})
-      tl.fromTo('._anim-step-2', {x: -100, opacity: 0}, {x: 0, opacity: 1})
+      tl.fromTo('._anim-step-2', {x: 100, opacity: 0}, {x: 0, opacity: 1})
       tl.fromTo('._anim-description-2', {y: 10, opacity: 0}, {y: 0, opacity: 1})
       tl.fromTo('._anim-description-2', {y: 0, opacity: 1}, {y: 10, opacity: 0, delay: 1})
       tl.fromTo('._anim-container-3', {x: 0}, {x: "-200%", duration: 0})
@@ -69,12 +69,12 @@ const AppResult = () => {
       tl.fromTo('._anim-container-4', {x: 0}, {x: "-300%", duration: 0})
       tl.fromTo('._anim-description-4', {y: 10, opacity: 0}, {y: 0, opacity: 1})
       tl.fromTo('._anim-description-4', {y: 0, opacity: 1}, {y: 10, opacity: 0, delay: 1})
-      tl.fromTo('._anim-step-2', {x: 0, opacity: 1}, {x: 100, opacity: 0})
+      tl.fromTo('._anim-step-2', {x: 0, opacity: 1}, {x: -100, opacity: 0})
       tl.fromTo('._anim-container-5', {x: 0}, {x: "-400%", duration: 0})
-      tl.fromTo('._anim-step-3', {x: -100, opacity: 0}, {x: 0, opacity: 1})
+      tl.fromTo('._anim-step-3', {x: 100, opacity: 0}, {x: 0, opacity: 1})
       tl.fromTo('._anim-description-5', {y: 10, opacity: 0}, {y: 0, opacity: 1})
       tl.fromTo('._anim-description-5', {y: 0, opacity: 1}, {y: 10, opacity: 0, delay: 1})
-      tl.fromTo('._anim-step-3', {x: 0, opacity: 1}, {x: 100, opacity: 0})
+      tl.fromTo('._anim-step-3', {x: 0, opacity: 1}, {x: -100, opacity: 0})
       tl.fromTo('._anim-block-end', {y: 0}, {y: 100})
       tl.fromTo('._anim-block-end', {opacity: 1}, {opacity: 0})
     }
