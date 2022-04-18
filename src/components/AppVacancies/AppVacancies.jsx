@@ -15,7 +15,7 @@ const AppVacancies = () => {
       <div className={classes.titleContainer}>
         <h2 className={classes.title}>Больше умеешь, лучше работаешь</h2>
         <div className={classes.arrow}>
-          <img src={IconArrow} alt="icon-arrow"/>
+          <img src={IconArrow} width={35} height={30} alt="icon-arrow"/>
         </div>
         <h2 className={classes.title}>Сложнее проекты, больше заработок</h2>
       </div>
@@ -39,6 +39,7 @@ const AppVacancies = () => {
         )}
       </Swiper>
       <Swiper
+        id="sliderVacancies2"
         className={classes.slider}
         spaceBetween={20}
         slidesPerView={'auto'}

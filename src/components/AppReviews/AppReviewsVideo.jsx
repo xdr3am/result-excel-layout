@@ -1,6 +1,6 @@
 import React from 'react';
 
-const AppVideo = ({video}) => {
+const AppReviewsVideo = ({video}) => {
   const videoRef = React.useRef(null)
 
   return (
@@ -17,4 +17,4 @@ const AppVideo = ({video}) => {
   );
 };
 
-export default AppVideo;
+export default AppReviewsVideo;

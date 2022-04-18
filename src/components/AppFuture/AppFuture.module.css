@@ -51,7 +51,7 @@
 }
 
 .pictureAfterContainer {
-  @apply relative flex items-center ml-auto mr-auto lg:mr-0;
+  @apply relative flex items-center ml-auto mr-auto;
 }
 
 .pictureAfter {

@@ -4,7 +4,7 @@ import SwiperCore, { Navigation, Pagination } from 'swiper';
 import 'swiper/css';
 import classes from './AppReviews.module.css';
 import ReviewVideo from '../../assets/images/content/review.mp4';
-import AppVideo from "./AppVideo";
+import AppReviewsVideo from "./AppReviewsVideo";
 
 SwiperCore.use([Navigation, Pagination]);
 
@@ -91,7 +91,7 @@ const AppReviews = () => {
           {reviews.map(review =>
             <SwiperSlide className={classes.slide} key={review.id}>
               <div className={classes.video}>
-                <AppVideo
+                <AppReviewsVideo
                   video={review.video}
                 />
               </div>

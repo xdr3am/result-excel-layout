@@ -30,7 +30,7 @@ const AppBonus = () => {
       <div className={classes.wrapper}>
         <h2 className={classes.title}>#Бонусы</h2>
         <p className={classes.subtitle}>
-          И несколько <span className={classes.fontMedium}>дополнительных уроков</span>, чтобы у тебя точно всё получилось
+          И несколько <span className={classes.textAccent}>дополнительных уроков</span>, чтобы у тебя точно всё получилось
         </p>
         <ul className={classes.list}>
           {bonuses.map(bonus =>

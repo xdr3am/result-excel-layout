@@ -1,5 +1,5 @@
 .section {
-  @apply relative max-w-[1860px] rounded-2xl mx-auto bg-primary1 my-[60px];
+  @apply relative max-w-[1860px] rounded-none md:rounded-2xl mx-auto bg-primary1 my-[60px];
 }
 
 .wrapper {
@@ -43,11 +43,11 @@
 }
 
 .itemColTitle {
-  @apply mb-5 text-sm font-semibold uppercase;
+  @apply mb-4 text-sm font-semibold uppercase;
 }
 
 .itemTitle {
-  @apply text-[22px] font-semibold;
+  @apply text-[22px] leading-[1] font-semibold;
 }
 
 .itemList {

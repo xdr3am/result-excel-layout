@@ -1,9 +1,9 @@
 .section {
-  @apply container relative py-[60px];
+  @apply px-0 md:px-5 container relative py-[60px];
 }
 
 .wrapper {
-  @apply flex flex-col items-center w-full mx-auto rounded-2xl py-[50px] px-5 xl:px-[120px] bg-[#f5f5f4];
+  @apply flex flex-col items-center w-full mx-auto rounded-none md:rounded-2xl py-[50px] px-5 xl:px-[120px] bg-[#f5f5f4];
 }
 
 .title {
@@ -30,6 +30,6 @@
   @apply text-base;
 }
 
-.fontMedium {
-  @apply font-medium;
+.textAccent {
+  @apply font-medium whitespace-nowrap border-b-2;
 }

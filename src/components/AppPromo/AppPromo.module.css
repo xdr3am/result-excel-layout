@@ -19,7 +19,7 @@
 }
 
 .video video {
-  @apply rounded-3xl;
+  @apply rounded sm:rounded-3xl;
 }
 
 .video::before {
@@ -81,7 +81,7 @@
 }
 
 .cloud {
-  @apply absolute -bottom-24 sm:bottom-0 left-0 sm:left-auto sm:right-[260px] max-w-[400px] pt-[40px] pb-[30px] px-[20px] shadow-lg bg-white rounded-[24px];
+  @apply absolute -bottom-24 md:bottom-0 left-5 md:translate-x-0 md:left-auto right-5 md:right-[260px] w-[90%] sm:w-full max-w-[400px] pt-[40px] pb-[30px] px-[20px] shadow-lg bg-white rounded-[24px];
 }
 
 .cloudIcon {

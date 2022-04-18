@@ -11,7 +11,7 @@ const AppPlan = () => {
         <div className={classes.content}>
           <h2 className={classes.title}>
             План обучения построен так, что ты поэтапно пройдешь
-            <span>полный цикл создания любого приложения.</span>
+            <span>полный цикл создания <span className={classes.textAccent}>любого</span> приложения.</span>
           </h2>
           <div className={classes.picture}>
             <img className={classes.pictureMask} src={ExcelMask} alt="excel-mask"/>

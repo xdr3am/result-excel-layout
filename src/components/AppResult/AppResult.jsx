@@ -15,7 +15,7 @@ const AppResult = () => {
         scrollTrigger: {
           trigger: section.current,
           start: "top top",
-          end: () => `+=${section.current.offsetWidth}`,
+          end: `+=${section.current.offsetWidth}`,
           pin: true,
           scrub: true,
           toggleActions: "play complete reverse reverse",

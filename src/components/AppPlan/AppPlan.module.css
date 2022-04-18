@@ -34,6 +34,10 @@
   @apply max-w-[1050px] mb-10 text-lg sm:text-2xl text-center;
 }
 
+.textAccent {
+  @apply border-b-2;
+}
+
 .textPrimary {
   @apply relative pl-9 text-primary2 text-lg sm:text-2xl;
 }
