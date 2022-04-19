@@ -8,7 +8,8 @@ const AppReviewsVideo = ({video}) => {
       ref={videoRef}
       onMouseOver={() => videoRef.current.play()}
       onMouseLeave={() => videoRef.current.pause()}
-      onClick={() => videoRef.current.muted = !videoRef.current.muted}
+      onClick={() => videoRef.current.muted = false}
+      onTouchEnd={() => videoRef.current.muted = true}
       muted
       loop
     >

@@ -15,7 +15,7 @@
 }
 
 .video {
-  @apply relative flex-shrink-0 flex items-center justify-center self-end ml-auto w-[110%] sm:w-[800px] mt-0 lg:-mt-16 xl:mt-0 -mb-[30px] -mr-[9.5%] lg:-mr-[19%];
+  @apply relative flex-shrink-0 flex items-center justify-center self-end ml-auto w-[102%] sm:w-[800px] mt-0 lg:-mt-16 xl:mt-0 -mb-[30px] -mr-[9.5%] lg:-mr-[19%];
 }
 
 .video video {

@@ -14,7 +14,6 @@ import AppRates from './components/AppRates/AppRates';
 import AppReviews from './components/AppReviews/AppReviews';
 import AppAuthors from './components/AppAuthors/AppAuthors';
 import AppFaq from './components/AppFaq/AppFaq';
-import AppTest from "./components/AppTest/AppTest";
 
 const App = () => {
   return (
@@ -24,7 +23,6 @@ const App = () => {
       <AppStatistic/>
       <AppPlan/>
       <AppResult/>
-      {/*<AppTest />*/}
       <AppFuture/>
       <AppVacancies/>
       <AppLearn/>

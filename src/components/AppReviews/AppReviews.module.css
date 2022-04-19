@@ -1,5 +1,5 @@
 .section {
-  @apply relative flex flex-col items-center pt-[60px] pb-[70px] my-[60px] bg-black max-w-[1860px] mx-auto rounded-2xl overflow-hidden;
+  @apply relative flex flex-col items-center pt-[60px] pb-[70px] my-[60px] bg-black max-w-[1860px] mx-auto rounded-none md:rounded-2xl overflow-hidden;
 }
 
 .wrapper {

@@ -6,7 +6,7 @@ const AppCodeExample = () => {
   return (
     <section className={switcher ? 'dark' : null}>
       <div className="relative py-[60px] container px-0 md:px-5">
-        <div className="relative flex flex-col items-center pt-[60px] bg-[#F5F5F4] dark:bg-[#0F1214] rounded-none md:rounded-2xl overflow-hidden transition-all duration-500">
+        <div className="relative flex flex-col items-center pt-[60px] pb-8 sm:pb-0 bg-[#F5F5F4] dark:bg-[#0F1214] rounded-none md:rounded-2xl overflow-hidden transition-all duration-500">
           <div className="absolute top-7 right-7 w-[170px]">
             <input
               className="hidden"
@@ -32,8 +32,8 @@ const AppCodeExample = () => {
             знаешь основы асинхронности, умеешь работать с функциями и классами
           </p>
 
-          <div className="relative flex items-center justify-center w-full px-8">
-            <div className="relative w-full max-w-[790px] rounded-t-[14px] bg-white dark:bg-[#282D32] shadow-xl transition-all duration-500">
+          <div className="relative flex items-center justify-center w-full px-2">
+            <div className="relative w-full max-w-[790px] rounded-[14px] md:rounded-b-none bg-white dark:bg-[#282D32] shadow-xl transition-all duration-500">
               <div className="flex items-center py-3 px-5 border-b border-[#E6E9EC] dark:border-[#21262B] transition-all duration-500">
                 <span className="w-3 h-3 mr-1 rounded-full bg-[#E6E9EC] dark:bg-[#3A3F45] transition-all duration-500" />
                 <span className="w-3 h-3 mr-1 rounded-full bg-[#E6E9EC] dark:bg-[#3A3F45] transition-all duration-500" />
@@ -69,7 +69,7 @@ const AppCodeExample = () => {
                 </div>
               </div>
 
-              <div className="relative sm:absolute bottom-0 md:bottom-10 right-0 md:-right-4 lg:-right-10 -left-[5%] sm:left-auto w-[110%] sm:w-[353px] -mt-2 sm:mt-0 py-5 px-6 rounded-2xl bg-white dark:bg-[#4D5258] text-sm sm:text-base text-black dark:text-white shadow-2xl transition-all duration-500">
+              <div className="relative sm:absolute bottom-0 md:bottom-10 right-0 md:-right-4 lg:-right-10 left-3 sm:left-auto w-[calc(100%_-_24px)] sm:w-[353px] -mt-2 sm:mt-0 py-5 px-6 rounded-2xl bg-white dark:bg-[#4D5258] text-sm sm:text-base text-black dark:text-white shadow-2xl transition-all duration-500">
                 Если ты понимаешь, что именно изображено на скриншоте  — ты 100% справишься с обучением и успешно прокачаешь навык
               </div>
             </div>
