@@ -16,14 +16,14 @@ import AppAuthors from './components/AppAuthors/AppAuthors';
 import AppFaq from './components/AppFaq/AppFaq';
 import AppTest from "./components/AppTest/AppTest";
 
-function App() {
+const App = () => {
   return (
     <div className="wrapper">
       <h1 className="visually-hidden">Курс Excel</h1>
       <AppPromo/>
       <AppStatistic/>
       <AppPlan/>
-      {/*<AppResult/>*/}
+      <AppResult/>
       {/*<AppTest />*/}
       <AppFuture/>
       <AppVacancies/>

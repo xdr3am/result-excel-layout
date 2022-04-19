@@ -19,7 +19,8 @@ const AppResult = () => {
         end: `+=${block1.current.offsetHeight}`,
         pin: true,
         pinSpacing: false,
-        scrub: true
+        scrub: true,
+        invalidateOnRefresh: true
       }
     })
 
@@ -27,6 +28,7 @@ const AppResult = () => {
     tl1.fromTo('._anim-block-start', {y: 100}, {y: 0})
     tl1.fromTo('._anim-description-1', {y: 10, opacity: 0}, {y: 0, opacity: 1})
     tl1.fromTo('._anim-description-1', {y: 0, opacity: 1}, {y: 10, opacity: 0, delay: 1})
+    tl1.fromTo('._anim-container-1', {opacity: 1}, {opacity: 0, duration: 0})
     tl1.fromTo('._anim-container-2', {opacity: 0}, {opacity: 1, duration: 0})
 
     const tl2 = gsap.timeline({
@@ -36,12 +38,14 @@ const AppResult = () => {
         end: `+=${block2.current.offsetHeight}`,
         pin: true,
         pinSpacing: false,
-        scrub: true
+        scrub: true,
+        invalidateOnRefresh: true
       }
     })
 
     tl2.fromTo('._anim-description-2', {y: 10, opacity: 0}, {y: 0, opacity: 1})
     tl2.fromTo('._anim-description-2', {y: 0, opacity: 1}, {y: 10, opacity: 0, delay: 1})
+    tl2.fromTo('._anim-container-2', {opacity: 1}, {opacity: 0, duration: 0})
     tl2.fromTo('._anim-container-3', {opacity: 0}, {opacity: 1, duration: 0})
 
     const tl3 = gsap.timeline({
@@ -50,7 +54,8 @@ const AppResult = () => {
         start: "top top",
         end: `+=${block3.current.offsetHeight}`,
         pin: true,
-        scrub: true
+        scrub: true,
+        invalidateOnRefresh: true
       }
     })
 
@@ -76,8 +81,8 @@ const AppResult = () => {
 
   return (
     <section ref={section} className="relative">
-      <div ref={block1} className="_anim-container-1 flex items-start md:items-center justify-center w-screen h-screen py-[5vh]">
-        <div className="w-screen h-screen flex items-start md:items-center justify-center bg-black rounded-2xl">
+      <div ref={block1} className="_anim-container-1 flex items-start md:items-stretch justify-center max-w-[1860px] mx-auto h-screen box-border py-[5vh]">
+        <div className="w-full flex items-start md:items-center justify-center bg-black rounded-2xl">
           <div className="_anim-block-start container flex flex-col items-center pb-[20%] pt-10">
             <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
               Твои результаты после курса поместятся в одну простую модель
@@ -108,8 +113,8 @@ const AppResult = () => {
           </div>
         </div>
       </div>
-      <div ref={block2} className="_anim-container-2 opacity-0 flex items-start md:items-center justify-center w-screen h-screen py-[5vh]">
-        <div className="w-screen h-screen flex items-start md:items-center justify-center bg-black rounded-2xl">
+      <div ref={block2} className="_anim-container-2 opacity-0 flex items-start md:items-stretch justify-center max-w-[1860px] mx-auto h-screen box-border py-[5vh]">
+        <div className="w-full flex items-start md:items-center justify-center bg-black rounded-2xl">
           <div className="container flex flex-col items-center pb-[20%] pt-10">
             <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
               Твои результаты после курса поместятся в одну простую модель
@@ -140,8 +145,8 @@ const AppResult = () => {
           </div>
         </div>
       </div>
-      <div ref={block3} className="_anim-container-3 opacity-0 flex items-start md:items-center justify-center w-screen h-screen py-[5vh]">
-        <div className="w-screen h-screen flex items-start md:items-center justify-center bg-black rounded-2xl">
+      <div ref={block3} className="_anim-container-3 opacity-0 flex items-start md:items-stretch justify-center max-w-[1860px] mx-auto h-screen box-border py-[5vh]">
+        <div className="w-full flex items-start md:items-center justify-center bg-black rounded-2xl">
           <div className="container flex flex-col items-center pb-[20%] pt-10">
             <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
               Твои результаты после курса поместятся в одну простую модель
