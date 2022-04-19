@@ -12,6 +12,7 @@ const AppReviewsVideo = ({video}) => {
       onTouchEnd={() => videoRef.current.muted = true}
       muted
       loop
+      preload
     >
       <source type="video/mp4" src={video}/>
     </video>
