@@ -89,7 +89,7 @@ const AppResult = () => {
     <div ref={pin} className="_pin h-[600vh]">
       <section ref={section} className="_anim-section relative w-[500%] h-screen py-0 xl:py-[40px] flex flex-row overflow-hidden">
         <div className="_anim-container-1 flex items-start md:items-center justify-center w-full h-full">
-          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-2xl bg-black">
+          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-none md:rounded-2xl bg-black">
             <div className="_anim-block-start container flex flex-col items-center pb-[20%] pt-10">
               <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
                 Твои результаты после курса поместятся в одну простую модель
@@ -121,7 +121,7 @@ const AppResult = () => {
           </div>
         </div>
         <div className="_anim-container-2 flex items-start md:items-center justify-center w-full h-full">
-          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-2xl bg-black">
+          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-none md:rounded-2xl bg-black">
             <div className="container flex flex-col items-center pb-[20%] pt-10">
               <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
                 Твои результаты после курса поместятся в одну простую модель
@@ -153,7 +153,7 @@ const AppResult = () => {
           </div>
         </div>
         <div className="_anim-container-3 flex items-start md:items-center justify-center w-full h-full">
-          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-2xl bg-black">
+          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-none md:rounded-2xl bg-black">
             <div className="container flex flex-col items-center pb-[20%] pt-10">
               <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
                 Твои результаты после курса поместятся в одну простую модель
@@ -185,7 +185,7 @@ const AppResult = () => {
           </div>
         </div>
         <div className="_anim-container-4 flex items-start md:items-center justify-center w-full h-full">
-          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-2xl bg-black">
+          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-none md:rounded-2xl bg-black">
             <div className="container flex flex-col items-center pb-[20%] pt-10">
               <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
                 Твои результаты после курса поместятся в одну простую модель
@@ -217,7 +217,7 @@ const AppResult = () => {
           </div>
         </div>
         <div className="_anim-container-5 flex items-start md:items-center justify-center w-full h-full">
-          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-2xl bg-black">
+          <div className="w-full h-full max-w-[1860px] flex items-start md:items-center justify-center mx-auto pt-[10vh] md:pt-0 rounded-none md:rounded-2xl bg-black">
             <div className="_anim-block-end container flex flex-col items-center pb-[20%] pt-10">
               <h2 className="max-w-[1000px] mb-10 md:mb-[80px] text-[28px] md:text-[54px] md:leading-[1.3] font-bold text-white text-center">
                 Твои результаты после курса поместятся в одну простую модель
