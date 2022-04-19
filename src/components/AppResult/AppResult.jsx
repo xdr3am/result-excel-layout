@@ -6,14 +6,11 @@ import IconArrow from '../../assets/images/icons/icon-arrow-right.svg';
 gsap.registerPlugin(ScrollTrigger);
 
 const AppResult = () => {
+  const pin = React.createRef();
   const section = React.createRef();
   const container = React.createRef();
 
   useEffect(() => {
-
-    let progress
-    // const anim = gsap.to("._anim-container-1", { opacity: 0, paused: true }) // can be left out
-
     ScrollTrigger.matchMedia({
       "(min-width: 768px)": function() {
         let tl = gsap.timeline()
@@ -38,19 +35,20 @@ const AppResult = () => {
         tl.fromTo('._anim-block-end', {y: 0}, {y: 100})
         tl.fromTo('._anim-block-end', {opacity: 1}, {opacity: 0})
 
-        const ST = ScrollTrigger.create({
-          trigger: "._pin",
+        ScrollTrigger.create({
+          trigger: pin.current,
           start: "top top",
           end: "bottom bottom",
-          // end: () => `+=${section.current.offsetWidth}`,
+          // end: () => `+=${pin.current.offsetHeight}`,
 
           animation: tl,
-          pin: '._anim-section',
+          pin: section.current,
+          pinSpacing: true,
           scrub: true
         })
 
-        ScrollTrigger.addEventListener("refreshInit", () => progress = ST.progress)
-        ScrollTrigger.addEventListener("refresh", () => ST.scroll(progress * ScrollTrigger.maxScroll(window)))
+        // ScrollTrigger.addEventListener("refreshInit", () => progress = ST.progress)
+        // ScrollTrigger.addEventListener("refresh", () => ST.scroll(progress * ScrollTrigger.maxScroll(window)))
       },
       "(max-width: 767px)": function() {
         let tl = gsap.timeline()
@@ -81,18 +79,19 @@ const AppResult = () => {
         tl.fromTo('._anim-block-end', {opacity: 1}, {opacity: 0})
 
         const ST = ScrollTrigger.create({
-          trigger: "._pin",
+          trigger: pin.current,
           start: "top top",
           end: "bottom bottom",
-          // end: () => `+=${section.current.offsetWidth}`,
+          // end: () => `+=${pin.current.offsetHeight}`,
 
           animation: tl,
-          pin: '._anim-section',
+          pin: section.current,
+          pinSpacing: true,
           scrub: true
         })
 
-        ScrollTrigger.addEventListener("refreshInit", () => progress = ST.progress)
-        ScrollTrigger.addEventListener("refresh", () => ST.scroll(progress * ScrollTrigger.maxScroll(window)))
+        // ScrollTrigger.addEventListener("refreshInit", () => progress = ST.progress)
+        // ScrollTrigger.addEventListener("refresh", () => ST.scroll(progress * ScrollTrigger.maxScroll(window)))
       }
     })
 
@@ -175,7 +174,7 @@ const AppResult = () => {
   })
 
   return (
-    <div className="_pin h-[300vh]">
+    <div ref={pin} className="_pin h-[1000vh]">
       <section ref={section} className="_anim-section relative w-[500%] h-screen py-0 xl:py-[40px] flex flex-row overflow-hidden">
         <div ref={container} className="_anim-container-1 flex items-start md:items-center justify-center w-full h-full pt-[10vh] md:pt-0 bg-black">
           <div className="_anim-block-start container flex flex-col items-center pb-[20%] pt-10">
